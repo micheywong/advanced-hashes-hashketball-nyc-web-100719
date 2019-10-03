@@ -209,48 +209,48 @@ def big_shoe_rebounds
   rebounds_larget_shoe
 end
 
-def most_points_scored
-  highest_points_scored=0
-  player_with_highest = 0
-  game_hash.each do |place, team|
-    team[:players].each do |attribute|
-       attribute.each do |key, value|
-        if key == :points
-          if highest_points_scored < value
-            highest_points_scored = value
-          player_with_highest = attribute[:player_name]
-          end
-         end
-       end
-      end
-    end
-  player_with_highest
-end
+# def most_points_scored
+#   highest_points_scored=0
+#   player_with_highest = 0
+#   game_hash.each do |place, team|
+#     team[:players].each do |attribute|
+#       attribute.each do |key, value|
+#         if key == :points
+#           if highest_points_scored < value
+#             highest_points_scored = value
+#           player_with_highest = attribute[:player_name]
+#           end
+#         end
+#       end
+#       end
+#     end
+#   player_with_highest
+# end
 
-def winning_team
-  points_scored=0
-  team_with_highest = 0
-  game_hash.each do |place, team|
-      team[:players].each do |attribute|
-       attribute.each do |key, value|
-        if key == :points
-          points_scored += value
-          binding.pry
-        end
-          team_with_highest = team
-       end
-      end
-    end
-  team_with_highest
-end
+# def winning_team
+#   points_scored=0
+#   team_with_highest = 0
+#   game_hash.each do |place, team|
+#       team[:players].each do |attribute|
+#       attribute.each do |key, value|
+#         if key == :points
+#           points_scored += value
+#           binding.pry
+#         end
+#           team_with_highest = team
+#       end
+#       end
+#     end
+#   team_with_highest
+# end
 
-def player_with_longest_name
+# def player_with_longest_name
   
-end
+# end
 
-def long_name_steals_a_ton
+# def long_name_steals_a_ton
   
-end
+# end
 
 
 
